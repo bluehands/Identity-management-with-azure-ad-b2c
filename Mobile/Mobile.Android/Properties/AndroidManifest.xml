@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.Mobile.Android">
+  <uses-sdk android:minSdkVersion="26" android:targetSdkVersion="26" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <application android:label="Mobile.Android">
+    <activity android:name="microsoft.identity.client.BrowserTabActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="msalbff9f38b-1b35-4b50-b0cb-aadb6cc9ccfb" android:host="auth" />
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>

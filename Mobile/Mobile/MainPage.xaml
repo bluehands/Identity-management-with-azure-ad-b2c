@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Mobile"
+             Title="Lust auf Software?"
+             x:Class="Mobile.MainPage">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="Eis.png" Aspect="AspectFill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></Image>
+            <StackLayout>
+                <BoxView Color="Transparent" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+                <StackLayout x:Name="StackLayoutVote" IsVisible="True" Padding="30,10">
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="NameLabel" IsVisible="True" FontSize="Large" FontAttributes="Bold" TextColor="White"/>
+                    </StackLayout>
+                </StackLayout>
+                <BoxView Color="Transparent" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+                <Button x:Name="ErdbeerButton" Text="Erdbeer" Clicked="OnVoteErdbeer" VerticalOptions="End" HorizontalOptions="CenterAndExpand" IsVisible="True"/>
+                <Button x:Name="VanilleButton" Text="Vanille" Clicked="OnVoteVanille" VerticalOptions="End" HorizontalOptions="CenterAndExpand" IsVisible="True"/>
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net47</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\scss\stylish-portfolio.scss" />
+    <None Include="wwwroot\scss\_bootstrap-overrides.scss" />
+    <None Include="wwwroot\scss\_callout.scss" />
+    <None Include="wwwroot\scss\_footer.scss" />
+    <None Include="wwwroot\scss\_global.scss" />
+    <None Include="wwwroot\scss\_masthead.scss" />
+    <None Include="wwwroot\scss\_mixins.scss" />
+    <None Include="wwwroot\scss\_portfolio.scss" />
+    <None Include="wwwroot\scss\_services.scss" />
+    <None Include="wwwroot\scss\_sidebar.scss" />
+    <None Include="wwwroot\scss\_variables.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.0" />
+  </ItemGroup>
+
+</Project>
