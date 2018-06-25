@@ -10,7 +10,6 @@ This project gives instructions how to build an Azure AD b2c identity management
   * Switch to tenant
 
 * Add a new Application "*Web Api*"
-  * Add Redirect url "*http://localhost:6420/*"  
   * Add Redirect url "*https://jwt.ms*"
   * Add App Id "*api*"
   * Add a new entry "*vote*" under "*Published scopes*"
