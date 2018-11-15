@@ -33,7 +33,13 @@ namespace Web_frontend
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.Use(async (context, next) =>
+            {
+                context.Response.Headers.Add("X-Frame-Options", "http://google.com");
+                await next();
+            });
             app.UseCors("allowAll");
+            app.UseDefaultFiles();
             app.UseStaticFiles();
         }
     }

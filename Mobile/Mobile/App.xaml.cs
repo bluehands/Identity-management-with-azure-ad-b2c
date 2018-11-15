@@ -18,7 +18,7 @@ namespace Mobile
 	    public static string PolicyResetPassword = "b2c_1_RP";
 
 	    public static string[] Scopes = { "https://erdbeerundvanille.onmicrosoft.com/api/vote" };
-	    public static string ApiEndpoint = "https://6e52469f.eu.ngrok.io/api/votes";
+	    public static string ApiEndpoint = "https://erdbeerundvanille-api.azurewebsites.net/api/votes";
 
 	    public static string AuthorityBase = $"https://login.microsoftonline.com/tfp/{Tenant}/";
 	    public static string Authority = $"{AuthorityBase}{PolicySignUpSignIn}";
